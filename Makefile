@@ -25,6 +25,7 @@ $(NAME): obj
 	$(CC) srcs/main.c $(OBJS) $(OPTFLAG) -o $(NAME) $(INCLUDES)
 	
 obj :
+	@mkdir objs
 	$(CC) $(OPTFLAG) -c $(SRCS) $(INCLUDES)
 	@mv *.o objs/
 	
